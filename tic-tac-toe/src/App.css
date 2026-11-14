@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background: #f5f4f0;
+  color: #242424;
+}
+
+.game {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #82967b;
+}
+
+h1 {
+  font-size: clamp(45px, 8vw, 90px);
+  letter-spacing: -5px;
+  margin: 10px 0;
+  line-height: 1.1;
+}
+
+h1 span {
+  color: #91a68b;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 35px;
+}
+
+.game-card {
+  width: min(100%, 420px);
+  padding: 35px;
+  background: white;
+  border: 1px solid #e8e8e4;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+}
+
+.game-status {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.square {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 12px;
+  background: #f1f2ee;
+  font-size: 50px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.square:hover {
+  background: #e4e9df;
+  transform: scale(1.03);
+}
+
+.square.x {
+  color: #718a70;
+}
+
+.square.o {
+  color: #c59b78;
+}
+
+.reset-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  background: #242424;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #718a70;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #999;
+}
